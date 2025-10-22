@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            /* background-color: rgb(226, 223, 217); */
+            font-family: poppins, sans-serif;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+
+        .img {
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            padding: 3px;
+            background-color: #4070f4;
+        }
+
+        .img .profile-img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            align-items: center;
+        }
+
+        .cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 370px;
+            width: 100%;
+            padding: 25px;
+            align-items: center;
+            background: #fff;
+            border-radius: 24px;
+            box-shadow: 1px 3px 5px;
+            position: relative;
+            
+        }
+        .cards::before{
+            content: "";
+            position: absolute;
+            background-color: #0d47e8;
+            width: 100%;
+            height: 35%;
+            top: 0;
+            left: 0;
+            border-radius: 24px 24px 0px 0px ;
+        }
+
+        
+
+        .text-data {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 13px;
+
+        }
+
+        .icons .link {
+            display: flex;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-decoration: none;
+            background-color: #0d47e8;
+            height: 20px;
+            width: 20px;
+            font-size: 20px;
+            border-radius: 50%;
+            padding: 15px;
+        }
+
+
+        .buttons {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .buttons button {
+
+            border-style: none;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 5px;
+            width: 100px;
+            color: #fff;
+            background: #4070f4;
+            border-radius: 20px;
+        }
+        .footer{
+            font-size: medium;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 20px;
+              margin-top: 20px;
+              padding: 0 15px;
+            }
+            .footer .f-ico{
+                padding-right: 20px;
+                
+                border-right: 2px solid rgb(193, 192, 192);
+                
+            }
+            .f-ico:last-child{
+                border-right: none;
+
+            }
+    </style>
+</head>
+
+<body>
+
+    <div class="cards">
+        <div class="img">
+            <img src="pexels-pixabay-220453.jpg" alt="" class="profile-img">
+        </div>
+        <!-- <div class="bg"></div> -->
+        <div class="text-data">
+            <span>CodingLab</span>
+            <span style="font-size: x-small; padding-top: 1px; color: #6a6565;">Yotutber&Blooger</span>
+        </div>
+        <div class="icons">
+            <a href="#" class="link" style="background-color: #114beb;"><i class='bxl  bx-facebook'></i> </a>
+            <a href="#" class="link" style="background-color: rgb(255, 0, 200);"><i class='bxl  bx-instagram'></i> </a>
+            <a href="#" class="link" style="background-color: black
+        ;"><i class='bxl  bx-twitter-x'></i> </a>
+            <a href="#" class="link" style="background-color: red"><i class='bxl  bx-youtube'></i> </a>
+        </div>
+        <div class="buttons">
+            <button>Suscribe</button>
+            <button>Message</button>
+        </div>
+        <div class="footer">
+            <div class="f-ico"><i class='bx  bx-heart'></i>
+                <span>60k</span>
+            </div>
+            <div class="f-ico"><i class='bx  bx-message'></i>
+                <span>5k</span>
+            </div>
+            <div class="f-ico"> <i class='bx  bx-share'></i>
+                <span>3k</span>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    </div>
+</body>
+
+</html>
