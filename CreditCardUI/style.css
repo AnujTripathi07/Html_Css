@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-family: poppins,sans-serif;
+}
+.container{
+    min-height: 100vh; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 2000px;/*gives 3d depth*/
+    
+    
+}
+.card{
+    /* position: relative; */
+    max-width: 380px;
+    width: 100%;
+    background: linear-gradient(45deg, rgb(11, 11, 137), rgb(31, 31, 85) , rgb(29, 47, 119) , rgb(0, 0, 0));
+    /* border: 2px solid black; */
+     /* background: repeating-radial-gradient(
+        ellipse,
+        #ffffff,           
+        #818181 3px,        
+        #323232 3px,       
+        #000000 8px         
+        ); */
+        border-radius: 25px;
+        box-shadow: #5f5e5e 2px 2px 5px;
+        transition: transform 0.8s; /*controls flip speed*/
+        /* transform-style: preserve-3d; *//*allows front and back layering*/
+    
+}
+.card:hover {
+    transform: rotateY(180deg);
+
+}
+.img{ 
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: aliceblue;
+    
+}
+.img .logo{
+    display: flex;
+    padding-top: 5px;
+}
+.img .logo img{
+    width: 48px;
+    height: 30px;
+}
+.img .chip{
+    width: 60px;
+    height: 40px;
+}
+.img h5{
+    padding: 3px 10px;
+    
+    font-size: medium;
+    font-weight: 400;
+
+}
+.CardNo{
+    margin: 10px;
+    padding: 10px;
+}
+.CardNo .text{
+    font-size: 12px;
+    font-weight: 400;
+}
+.CardNo .no{
+    font-size: large;
+    font-weight: 300;
+    padding-top: 4px;
+}
+.footer{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .name{
+    padding-top: 7px;
+}
+.footer .expiry .validity{
+    font: 100;
+}
+
+
